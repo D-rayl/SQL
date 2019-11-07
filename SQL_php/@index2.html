@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Motorcycle Database</title>
+</head>
+
+<body>
+<H1>Motorcycle Database</H1>
+<hr />
+<form action="@select_all.php" method="post">
+Click here to select all the records from the manufacturer database:- 
+<input type="submit" value="Show all Manufacturers">
+</form>
+<hr />
+Use this section to select all manufacturers from a single country: <br />
+<form action="@select_country.php" method="post">
+Type in Country Name: <input type="text" name="InputCountry"><br>
+<input type="submit" value="Display Country">
+</form>
+<hr>
+Use this section to insert a single country record:<br />
+<form action="@insert_country.php" method="post">
+Type in a new Country Name: <input type="text" name="InsertCountry"><br>
+<input type="submit" value="Add Country">
+</form>
+<hr />
+Use this section to enter a new manufacturer:<br />
+<form action="@insert_manufacturer.php" method="post">
+Type in a new Manufacturer Name: <input type="text" name="InsertName"><br>
+Type in the Country Name: <input type="text" name="InsertCountry"><br>
+Type in a new Rating: <input type="number" name="InsertRating"><br>
+<input type="submit" value="Add Manufacturer">
+</form>
+<hr />
+Use this section to delete a country:<br />
+<form action="@delete_country.php" method="post">
+Type in a Country Name for Deletion : <input type="text" name="DeleteCountry"><br>
+<input type="submit" value="Delete Country">
+</form>
+<hr />
+</body>
+</html>
