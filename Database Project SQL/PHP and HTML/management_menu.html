@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jane's Catering Database</title>
+</head>
+
+<body>
+
+<H1><i>Jane's Catering Database</i></H1>
+
+<H2>Management Menu</H2>
+
+<form action="add_clients.php" method="post">
+Enter Client ID: <input type="number" name="InsertId"><br>
+Enter First Name: <input type="text" name="InsertFirstName"><br>
+Enter Family Name: <input type="text" name="InsertFamilyName"><br>
+Enter Address: <input type="text" name="InsertAddress"><br>
+Enter Suburb: <input type="text" name="InsertSuburb"><br>
+Enter Phone: <input type="number" name="InsertPhone"><br>
+Enter Comment: <input type="text" name="InsertComment"><br>
+<input type="submit">
+</form>
+<br>
+
+<p><a href="edit_client.html">Edit clients Details</a></p>
+
+<p><a href="edit_booking.html">Edit booking details</a></p>
+<br>
+<form action="delete_client.php" method="post">
+Enter client ID for Deletion : <input type="number" name="delete"><br>
+<input type="submit" value="Delete">
+</form>
+<br>
+<p>Select all clients by suburb</p>
+<form action="clients_by_suburb.php" method="post">
+Enter suburb: <input type="text" name="suburb"><br>
+<input type="submit">
+</form>
+<br>
+<form action="load_all_comments.php" method="post">
+Load all comments: <br>
+<input type="submit">
+</form>
+<br>
+<form action="popular_catering.php" method="post">
+Find the most popular catering option: <br>
+<input type="submit">
+</form>
+<br>
+<form action="calc_cost.php" method="post">
+Calculate the cost of booking invoice number:<input type="number" name="calc"><br>
+<input type="submit">
+</form>
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
